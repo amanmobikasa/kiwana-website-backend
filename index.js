@@ -172,7 +172,7 @@ app.post("/subscribe", cors(), async (req, res) => {
     const userSubscribe = await SubscribeSchema.findOne({ email: email });
     // console.log("userSubscribe",userSubscribe)
     if (userSubscribe) {
-      // console.log("userSubscribe", userSubscribe);
+      console.log("userSubscribeNow", userSubscribe);
       return res.json({
         status: 503,
         success: false,
