@@ -31,7 +31,7 @@ app.post("/payment", cors(), async (req, res) => {
       description: "kiwana product",
       payment_method: id,
       confirm: true,
-      return_url: "https://localhost:3000/login",
+      return_url: "http://localhost:3000/login",
     });
     console.log(payment, "successful");
     res.json({
